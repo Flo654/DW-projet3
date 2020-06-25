@@ -1,0 +1,33 @@
+#main_header{
+    text-align: center;
+    background-color: teal;
+    color: rgb(219, 170, 46);
+    padding: 3rem;
+    margin-bottom: 5px;
+}
+
+#menus{
+    display: grid;
+}
+.menu{
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 4rem;
+    background-color: darkgray;
+}
+
+.container_next {
+    
+    text-align: center;
+    background-color: teal;
+    margin: auto;
+    padding: 5%;
+}
+
+footer{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    background-color: teal;
+    color:rgb(219, 170, 46);
+}

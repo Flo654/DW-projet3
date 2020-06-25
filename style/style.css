@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+#main_header{
+    background-color: teal;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 1rem;
+    font-size: 3vw;
+}
+
+#menus{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 5%;
+    padding: 5% 5%;
+    
+}
+
+.menu{
+    background-color: lightblue;
+    box-shadow: 0px 0px 8px grey;
+    display: block;    
+    text-align: center;
+    padding: 60% 5% ;
+}
+
+.menu h1 {
+    font-size: 1.8rem;
+}
+.menu h2{
+    font-size: 1.8rem;
+}
+
+#main_footer{
+   /* margin-top:10%;*/
+    display:flex;
+    background-color: teal;
+    color:darkgoldenrod;
+    font-size: 2.5vw;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+.container_next{
+    background-color: teal;
+    color:darkgoldenrod;
+    width: fit-content;
+    margin: 5% auto 15% ;
+    text-align: center;
+    padding: 1% 4%;
+    border-radius: 10px;
+    }
+
+.container_next p{
+    font-size: 3.5vw;
+
+}
+
+.LaNoteEnchantee {
+    text-align: left;    
+    background-color: indianred;
+    width: 90%;
+    height: 100vh;
+    margin:5% auto 120px;
+
+    
+}
+.LaNoteEnchantee div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+    font-size: 1.3em
+    
+}
+
+
+h2,h1, h3{
+    text-align: center;
+}
+
+
+
+
+
+@media all and (max-width: 700px){
+    #menus{
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        padding: 0.5rem;
+        
+    }
+
+    #menus h1{
+        font-size:2rem;
+    }
+
+    .menu {
+        width:90%;
+        margin:auto;
+        padding: 50% 10px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+    #main_header{
+        font-size: 16px;
+    }
+    
+    .container_next{
+        display:block;
+        margin-bottom: 90px;
+
+    }
+    .container_next p{
+        font-size: 16px;
+
+    }
+}
