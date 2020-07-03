@@ -1,0 +1,22 @@
+//mixin template colors
+@mixin template-color {
+    background-color: $template_background_color;
+    color: $template_text_color;
+    text-align: center;    
+}
+
+//mixin menu Shapping
+@mixin menu-shapping($background_color) {
+    background-color: $background_color;
+    padding: 20% 5%;
+    box-shadow: 0 0 8px grey;    
+}
+// mixin gradients
+@mixin gradient ($direction, $list){
+    background: linear-gradient(to $direction, $list);
+    background: -webkit-linear-gradient(to $direction, $list);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent    
+}
+

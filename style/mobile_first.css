@@ -1,33 +1,178 @@
-#main_header{
-    text-align: center;
-    background-color: teal;
-    color: rgb(219, 170, 46);
-    padding: 3rem;
-    margin-bottom: 5px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-#menus{
-    display: grid;
+#main_footer {
+  background-color: #549B85;
+  color: #F1C849;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
-.menu{
-    margin-bottom: 5px;
-    text-align: center;
-    padding: 4rem;
-    background-color: darkgray;
+#main_footer p {
+  color: #F1C849;
+  font-size: 1.2rem;
 }
 
-.container_next {
-    
-    text-align: center;
-    background-color: teal;
-    margin: auto;
-    padding: 5%;
+#main_header {
+  background-color: #549B85;
+  color: #F1C849;
+  text-align: center;
+  padding: 1.8rem;
+}
+#main_header h1 {
+  font-size: 3rem;
 }
 
-footer{
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    background-color: teal;
-    color:rgb(219, 170, 46);
+button {
+  background-color: #549B85;
+  color: #F1C849;
+  text-align: center;
+  border: none;
+  display: block;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
 }
+button .blink span {
+  animation-name: dots;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+button :nth-child(2) {
+  animation-delay: 0.2s;
+}
+button :nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes dots {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+#menus {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding: 5% 5%;
+  text-align: center;
+}
+
+#LaNoteEnchantee {
+  background-color: #fcdfdb;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+  padding: 15% 5%;
+}
+#LaNoteEnchantee h1, #LaNoteEnchantee h2 {
+  color: #3C1218;
+}
+#LaNoteEnchantee i {
+  background: linear-gradient(to left, #F0505F, #F78F6A);
+  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+#LeChicALaFrancaise {
+  background-color: #fef5ff;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+#LeChicALaFrancaise h1 {
+  background: linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
+  background: -webkit-linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#LeDeliceDesPapilles {
+  background-color: #f9f9f9;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+#LeDeliceDesPapilles h1 {
+  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#LaPaletteDuGout {
+  background-color: #fdfffd;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+#LaPaletteDuGout h1 {
+  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.LaNoteEnchantee {
+  background-color: #fcdfdb;
+  color: #3C1218;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  margin-bottom: 4rem;
+}
+.LaNoteEnchantee i {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+  background: linear-gradient(to right, #F0505F, #F78F6A);
+  background: -webkit-linear-gradient(to right, #F0505F, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.FirstCourse--header, .MainCourse--header, .Dessert--header {
+  margin-bottom: 1rem;
+  display: block;
+  justify-content: center;
+}
+
+.separateur {
+  width: 40%;
+  height: 40%;
+}
+.separateur h3 {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.prix {
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=mobile_first.css.map */

@@ -4,6 +4,10 @@
     box-sizing: border-box;
     text-decoration: none;
     
+    
+}
+i{font-size: 3rem;
+
 }
 /* mise en forme du header*/
 #main_header{
@@ -49,6 +53,7 @@ opacity: 1;
 }
 
 .container_next{
+    border: none;
     display :flex;
     color: darkgoldenrod;
     background-color: teal;    
@@ -121,23 +126,70 @@ opacity: 1;
     background-color: indianred;
     width: 90%;
     height: auto;
-    margin:5% auto 120px;
-
-    
+    margin:5% auto 120px;    
 }
-.LaNoteEnchantee div{
+
+.LaNoteEnchantee h2{
+    font-size: 1.8rem;
+}
+.LaNoteEnchantee p{
+    font-size: 1.5rem;
+}
+.FirstCourse  div{
     display: flex;
     justify-content: space-between;
     margin: 10px 100px;
-    font-size: 1.3em
-    
+    font-size: 1.3em;  
+}
+.MainCourse  div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+    font-size: 1.3em;
 }
 
+.Dessert  div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+    font-size: 1.3em;
+}
+header i{
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
 
 h2,h1, h3{
     text-align: center;
 }
 
+
+.FirstCourse--header, .MainCourse--header, .Dessert--header{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.enchante{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}  
+.enchante h3{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 2rem;
+    
+
+
+}
+.enchante i{
+    
+    font-size: 2rem;
+}
 
 
 
