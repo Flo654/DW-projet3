@@ -42,13 +42,11 @@ button {
     margin-bottom: 5rem;
     margin-top: 3rem;
 
+//dots animation
     .blink span{
-        
-        animation-name: dots;
-        animation-duration: 1.4s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: both;
-    }
+        @include dots;
+
+     }
     :nth-child(2){
         animation-delay: .2s;
     }
@@ -57,21 +55,9 @@ button {
     }
 
 
-    @keyframes dots {
-        0%{
-            opacity: .2;
-        }
-
-        20%{
-            opacity: 1;
-        }
-
-        100%{
-            opacity: .2;
-        }
-    }
+    @include keysdots;
 }
-    
+//end of dots animation 
 
 #menus{
     display: grid;
@@ -85,8 +71,12 @@ button {
 #LaNoteEnchantee{
     @include menu-shapping($background_note_enchantee);
     padding: 15% 5%;
-    h1, h2{
-        color: $text_color_note_enchantee
+    h1{
+        color: $text_color_note_enchantee;
+        font-family: "Devonshire", cursive;
+    }
+    h2{
+        color: $text_color_note_enchantee;
     }
     i{
         @include gradient(left, $list1 );
@@ -98,12 +88,15 @@ button {
     @include menu-shapping($background_LeChicALaFrancaise);
     h1{
         @include gradient(bottom right, $list2);
+        font-family: "Croissant One", cursive;
+        font-size: 1.3rem;
     }
 }
 
 #LeDeliceDesPapilles{
     @include menu-shapping($background_LeDeliceDesPapilles );
     h1{
+        
         @include gradient(right,$list3)
     }
 }
@@ -114,6 +107,15 @@ button {
         @include gradient(right, $list4);
     }
 }
+//footer animation
+.mentions_legales, .contactez_nous{
+
+    &:hover{
+        @include shake ;}
+}
+
+@include keyframes;
+//end of footer animation
 
 .LaNoteEnchantee{
     background-color: $background_note_enchantee;
@@ -122,10 +124,16 @@ button {
     margin: 5px;
     padding: 2px;
     margin-bottom: 4rem;
-    
+
+    h2{
+        font-family: "Devonshire", cursive;
+    }    
+    p, h3{
+        font-family: "Kalam", cursive;
+    }   
       
     i{
-        font-size: 2rem;
+        font-size: 3rem;
         padding-top: 1rem;
         padding-bottom: 0.3rem;
         @include gradient(right,$list1);
@@ -156,4 +164,29 @@ button {
     margin-top: 3px;
     margin-bottom: 20px;
     font-weight: bolder;
+}
+.enchante{
+    h4{
+        font-family: "Devonshire", cursive;
+    }
+    i{
+        font-size: 2rem;
+    }
+}
+.LeChicALaFrancaise{
+    background-color: $background_LeChicALaFrancaise;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+    margin-bottom: 4rem;
+    h2{
+        @include gradient(bottom right, $list2);
+        font-family: "Croissant One", cursive;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+}
+.rotate{
+    transform: rotate(1.5turn)
 }

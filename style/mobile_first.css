@@ -46,10 +46,8 @@ button {
   margin-top: 3rem;
 }
 button .blink span {
-  animation-name: dots;
-  animation-duration: 1.4s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
+  -webkit-animation: dots 1.4s infinite both;
+  animation: dots 1.4s infinite both;
 }
 button :nth-child(2) {
   animation-delay: 0.2s;
@@ -83,7 +81,11 @@ button :nth-child(3) {
   box-shadow: 0 0 8px grey;
   padding: 15% 5%;
 }
-#LaNoteEnchantee h1, #LaNoteEnchantee h2 {
+#LaNoteEnchantee h1 {
+  color: #3C1218;
+  font-family: "Devonshire", cursive;
+}
+#LaNoteEnchantee h2 {
   color: #3C1218;
 }
 #LaNoteEnchantee i {
@@ -106,6 +108,8 @@ button :nth-child(3) {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 1.3rem;
 }
 
 #LeDeliceDesPapilles {
@@ -134,6 +138,46 @@ button :nth-child(3) {
   color: transparent;
 }
 
+.mentions_legales:hover, .contactez_nous:hover {
+  -webkit-animation: shake 0.5s linear infinite both;
+  animation: shake 0.5s linear infinite both;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 .LaNoteEnchantee {
   background-color: #fcdfdb;
   color: #3C1218;
@@ -142,8 +186,14 @@ button :nth-child(3) {
   padding: 2px;
   margin-bottom: 4rem;
 }
+.LaNoteEnchantee h2 {
+  font-family: "Devonshire", cursive;
+}
+.LaNoteEnchantee p, .LaNoteEnchantee h3 {
+  font-family: "Kalam", cursive;
+}
 .LaNoteEnchantee i {
-  font-size: 2rem;
+  font-size: 3rem;
   padding-top: 1rem;
   padding-bottom: 0.3rem;
   background: linear-gradient(to right, #F0505F, #F78F6A);
@@ -173,6 +223,35 @@ button :nth-child(3) {
   margin-top: 3px;
   margin-bottom: 20px;
   font-weight: bolder;
+}
+
+.enchante h4 {
+  font-family: "Devonshire", cursive;
+}
+.enchante i {
+  font-size: 2rem;
+}
+
+.LeChicALaFrancaise {
+  background-color: #fef5ff;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  margin-bottom: 4rem;
+}
+.LeChicALaFrancaise h2 {
+  background: linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
+  background: -webkit-linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Croissant One", cursive;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.rotate {
+  transform: rotate(1.5turn);
 }
 
 /*# sourceMappingURL=mobile_first.css.map */
