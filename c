@@ -1,0 +1,23 @@
+integration de sass
+	-creation des dossiers mixin et variable
+	-creation package json pour utilisation sass
+progression sur css mobile first
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   images/barre.png
+#	modified:   index.html
+#	modified:   menu_la_note_enchantee.html
+#	modified:   menu_le_chic_a_la_francaise.html
+#	new file:   package.json
+#	new file:   sass/mobile_first.scss
+#	new file:   sass/utilities/_mixins.scss
+#	new file:   sass/utilities/_variables.scss
+#	modified:   style/mobile_first.css
+#	new file:   style/mobile_first.css.map
+#	renamed:    style/style.css -> style/rootu.css
+#
