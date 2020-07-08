@@ -32,27 +32,29 @@
   font-size: 3rem;
 }
 
-button {
+.container_next {
   background-color: #549B85;
   color: #F1C849;
   text-align: center;
   border: none;
+  width: fit-content;
   display: block;
+  text-align: center;
   padding: 0.8rem;
   font-size: 1.2rem;
   border-radius: 10px;
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   margin-top: 3rem;
 }
-button .blink span {
+.container_next span {
   -webkit-animation: dots 1.4s infinite both;
   animation: dots 1.4s infinite both;
 }
-button .blink span:nth-child(2) {
+.container_next span:nth-child(2) {
   animation-delay: 0.2s;
 }
-button .blink span:nth-child(3) {
+.container_next span:nth-child(3) {
   animation-delay: 0.4s;
 }
 @keyframes dots {

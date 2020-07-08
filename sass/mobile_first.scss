@@ -34,16 +34,18 @@
 .container_next {
     @include template-color;
     border:none;
+    width: fit-content;
     display:block;
+    text-align: center;
     padding: 0.8rem;
     font-size: 1.2rem;
     border-radius: 10px;
-    margin: auto;
-    margin-bottom: 5rem;
+    margin:auto;
+    margin-bottom: 10rem;
     margin-top: 3rem;
 
 
-    .blink span{
+    span{
         @include dots;
 
      
