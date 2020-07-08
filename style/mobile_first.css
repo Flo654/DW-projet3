@@ -49,10 +49,10 @@ button .blink span {
   -webkit-animation: dots 1.4s infinite both;
   animation: dots 1.4s infinite both;
 }
-button :nth-child(2) {
+button .blink span:nth-child(2) {
   animation-delay: 0.2s;
 }
-button :nth-child(3) {
+button .blink span:nth-child(3) {
   animation-delay: 0.4s;
 }
 @keyframes dots {
@@ -87,6 +87,7 @@ button :nth-child(3) {
 }
 #LaNoteEnchantee h2 {
   color: #3C1218;
+  font-family: "Kalam", cursive;
 }
 #LaNoteEnchantee i {
   background: linear-gradient(to left, #F0505F, #F78F6A);
@@ -111,6 +112,14 @@ button :nth-child(3) {
   font-family: "Croissant One", cursive;
   font-size: 1.3rem;
 }
+#LeChicALaFrancaise h2 {
+  font-family: "Kalam", cursive;
+  background: linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
+  background: -webkit-linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 #LeDeliceDesPapilles {
   background-color: #f9f9f9;
@@ -118,6 +127,15 @@ button :nth-child(3) {
   box-shadow: 0 0 8px grey;
 }
 #LeDeliceDesPapilles h1 {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#LeDeliceDesPapilles h2 {
+  font-family: "Kalam", cursive;
   background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
   background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
   background-clip: text;
@@ -136,6 +154,15 @@ button :nth-child(3) {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-family: "Kaushan Script", cursive;
+}
+#LaPaletteDuGout h2 {
+  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Kalam", cursive;
 }
 
 .mentions_legales:hover, .contactez_nous:hover {
@@ -234,6 +261,7 @@ button :nth-child(3) {
 
 .LeChicALaFrancaise {
   background-color: #fef5ff;
+  color: black;
   text-align: center;
   margin: 5px;
   padding: 2px;
@@ -249,9 +277,58 @@ button :nth-child(3) {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
+.LeChicALaFrancaise p, .LeChicALaFrancaise h3 {
+  font-family: "Kalam", cursive;
+}
 
 .rotate {
   transform: rotate(1.5turn);
+}
+
+.LeDeliceDesPapilles {
+  background-color: #f9f9f9;
+  color: black;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  margin-bottom: 4rem;
+}
+.LeDeliceDesPapilles h2 {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.LeDeliceDesPapilles p, .LeDeliceDesPapilles h3 {
+  font-family: "Kalam", cursive;
+}
+
+.LaPaletteDuGout {
+  background-color: #fdfffd;
+  color: black;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  margin-bottom: 4rem;
+}
+.LaPaletteDuGout h2 {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.LaPaletteDuGout p, .LaPaletteDuGout h3 {
+  font-family: "Kalam", cursive;
 }
 
 /*# sourceMappingURL=mobile_first.css.map */

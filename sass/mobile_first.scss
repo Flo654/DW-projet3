@@ -31,7 +31,7 @@
     }
 }
 
-button {
+.container_next {
     @include template-color;
     border:none;
     display:block;
@@ -42,19 +42,19 @@ button {
     margin-bottom: 5rem;
     margin-top: 3rem;
 
-//dots animation
+
     .blink span{
         @include dots;
 
-     }
-    :nth-child(2){
+     
+    &:nth-child(2){
         animation-delay: .2s;
     }
-    :nth-child(3){
+    &:nth-child(3){
         animation-delay: 0.4s;
     }
 
-
+    }
     @include keysdots;
 }
 //end of dots animation 
@@ -71,12 +71,15 @@ button {
 #LaNoteEnchantee{
     @include menu-shapping($background_note_enchantee);
     padding: 15% 5%;
+    
     h1{
         color: $text_color_note_enchantee;
         font-family: "Devonshire", cursive;
     }
     h2{
         color: $text_color_note_enchantee;
+        font-family: "Kalam", cursive;
+        
     }
     i{
         @include gradient(left, $list1 );
@@ -91,12 +94,21 @@ button {
         font-family: "Croissant One", cursive;
         font-size: 1.3rem;
     }
+    h2{
+        font-family: "Kalam", cursive;
+        @include gradient(bottom right, $list2);
+
+    }
 }
 
 #LeDeliceDesPapilles{
     @include menu-shapping($background_LeDeliceDesPapilles );
     h1{
-        
+        font-family: "Dancing Script", cursive;
+        @include gradient(right,$list3)
+    }
+    h2{
+        font-family: "Kalam", cursive;
         @include gradient(right,$list3)
     }
 }
@@ -105,6 +117,12 @@ button {
     @include menu-shapping($background_LaPaletteDuGout);
     h1{
         @include gradient(right, $list4);
+        font-family: "Kaushan Script", cursive;
+    }
+    h2{
+        @include gradient(right, $list4);
+        font-family: "Kalam", cursive;
+
     }
 }
 //footer animation
@@ -117,6 +135,8 @@ button {
 @include keyframes;
 //end of footer animation
 
+
+//la note enchantée menu page
 .LaNoteEnchantee{
     background-color: $background_note_enchantee;
     color:$text_color_note_enchantee;
@@ -146,18 +166,16 @@ button {
     justify-content: center;
 }
     
-    .separateur{
-        width:40%;
-        height:40%;
-       
-        
-    
+.separateur{
+    width:40%;
+    height:40%;   
+
     h3{
         margin-left: 2px;
         margin-right: 2px;
         
     }
-    }
+}
 
 .prix{
     display: inline-block;
@@ -175,6 +193,7 @@ button {
 }
 .LeChicALaFrancaise{
     background-color: $background_LeChicALaFrancaise;
+    color:black;
     text-align: center;
     margin: 5px;
     padding: 2px;
@@ -185,8 +204,49 @@ button {
         padding-top: 1rem;
         padding-bottom: 2rem;
     }
+    p, h3{
+        font-family: "Kalam", cursive;
+    }
 
 }
 .rotate{
     transform: rotate(1.5turn)
+}
+.LeDeliceDesPapilles{
+    background-color: $background_LeDeliceDesPapilles;
+    color:black;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+    margin-bottom: 4rem;
+
+    h2{
+        font-family: "Dancing Script", cursive;
+        @include gradient(right,$list3);
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }    
+    p, h3{
+        font-family: "Kalam", cursive;
+    }   
+}
+.LaPaletteDuGout{
+    background-color: $background_LaPaletteDuGout;
+    color:black;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+    margin-bottom: 4rem;
+
+    h2{
+        font-family: "Kaushan Script", cursive;
+        @include gradient(right,$list4);
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }    
+    p, h3{
+        font-family: "Kalam", cursive;
+    }   
 }
