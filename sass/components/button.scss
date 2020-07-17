@@ -1,11 +1,19 @@
 .container_next {
     @include template-color;
+<<<<<<< HEAD
     display: block;
     border: none;
     text-align: center;
     width: fit-content;
     margin-bottom: 90px;
     padding: 5px;
+=======
+    border:none;
+    display:block;
+    width: fit-content;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+>>>>>>> b77e82c49646b021196c78beabc399b7d22d2d3c
     border-radius: 10px;
     
 //button animation
