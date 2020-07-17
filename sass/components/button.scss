@@ -1,7 +1,8 @@
-button {
+.container_next {
     @include template-color;
     border:none;
     display:block;
+    width: fit-content;
     padding: 0.8rem;
     font-size: 1.2rem;
     border-radius: 10px;
@@ -11,7 +12,7 @@ button {
     
 //button animation
 
-    .blink span{
+     span{
         
         animation-name: dots;
         animation-duration: 1.4s;
