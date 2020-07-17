@@ -1,17 +1,16 @@
-button {
+.container_next {
     @include template-color;
-    border:none;
-    display:block;
-    padding: 0.8rem;
-    font-size: 1.2rem;
+    display: block;
+    border: none;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 90px;
+    padding: 5px;
     border-radius: 10px;
-    margin: auto;
-    margin-bottom: 5rem;
-    margin-top: 3rem;
     
 //button animation
 
-    .blink span{
+     span{
         
         animation-name: dots;
         animation-duration: 1.4s;
