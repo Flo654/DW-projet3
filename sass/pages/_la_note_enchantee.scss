@@ -1,0 +1,27 @@
+.LaNoteEnchantee {
+    @include menu_page_setting ($m1_bg, $m1_tc, $m1_ffh1, $m1_ffh2, $m1_ffh2, $list0);
+  
+       h4{
+        font-size: 2rem;
+        font-family: "Devonshire", cursive;
+        margin-left:5px;
+      }
+} 
+
+header i {
+      
+    @include gradient (right, $list1);
+    font-size: 3rem;
+    margin-top:5px;
+  }
+  
+  .enchante i {
+    @include gradient (right, $list1);
+    font-size: 2rem;
+  }
+  
+  .enchante{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+   }

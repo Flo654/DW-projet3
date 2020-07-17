@@ -12,6 +12,7 @@ $padding_note_enchantee:(20% 5%);
 $shadow_note_enchantee:(0 0 8px grey);
 $font_family_note_enchantee_h1: "devonshire", cursive;
 $font_family_note_enchantee_h2: "kalam", cursive;
+$list0: #3C1218, #3C1218;
 
 //shorcut variables
 $m1_bg: $background_note_enchantee;
@@ -47,21 +48,43 @@ $m2_ffh1: $font_family_chic_francaise_h1;
 $m2_ffh2: $font_family_chic_francaise_h2;
 
 
-
-
-
-$background_LeChicALaFrancaise: #fef5ff;
-$text_color_first_course_LeChicALaFrancaise:#c67412;
-$text_color_main_course_LeChicALaFrancaise:#a56799;
-$text_color_dessert_LeChicALaFrancaise:#6e4ccc;
-$list2: $text_color_first_course_LeChicALaFrancaise, $text_color_main_course_LeChicALaFrancaise, $text_color_dessert_LeChicALaFrancaise ;
-
 //menu le delice des papilles variables
-$background_LeDeliceDesPapilles: #f9f9f9;
-$text_color_LeDeliceDesPapilles: #1b88fb;
+
+
+$background_delice_papilles: #f9f9f9;
+$text_color_delice_papilles: #1b88fb;
+$padding_delice_papilles:(20% 5%);
+$shadow_delice_papilles:(0 0 8px grey);
+$font_family_delice_papilles_h1: "dancing script", cursive;
+$font_family_delice_papilles_h2: "kalam", cursive;
 $list3: #072ddd, #1571f3, #249ef9;
 
+//shorcut variables
+$m3_bg: $background_delice_papilles;
+$m3_tc: $text_color_delice_papilles;
+$m3_grad: $list3;
+$m3_p: $padding_delice_papilles;
+$m3_s: $shadow_delice_papilles;
+$m3_ffh1: $font_family_delice_papilles_h1;
+$m3_ffh2: $font_family_delice_papilles_h2;
+
+
+
+
 // menu la palette du gout variables
-$background_LaPaletteDuGout:#fdfffd;
-$text_color_LaPaletteDuGout:#72bf56;
+$background_palette_gout:#fdfffd;
+$text_color_palette_gout:#72bf56;
+$padding_palette_gout:(20% 5%);
+$shadow_palette_gout:(0 0 8px grey);
+$font_family_palette_gout_h1: "kaushan script", cursive;
+$font_family_palette_gout_h2: "kalam", cursive;
 $list4: #479a44, #83cd60, #beff7f;
+
+//shorcut variables
+$m4_bg: $background_palette_gout;
+$m4_tc: $text_color_palette_gout;
+$m4_grad: $list4;
+$m4_p: $padding_palette_gout;
+$m4_s: $shadow_palette_gout;
+$m4_ffh1: $font_family_palette_gout_h1;
+$m4_ffh2: $font_family_palette_gout_h2;

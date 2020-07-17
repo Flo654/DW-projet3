@@ -11,8 +11,9 @@
 //menus framework
 $menus:
 
-"la_note_enchantee" $m1_bg $m1_p $m1_s $m1_tc $m1_ffh1 $m1_ffh2 $m1_grad,
-"le_chic_a_la_francaise" $m2_bg $m2_p $m2_s $m2_tc $m2_ffh1 $m2_ffh2 $m2_grad;
+"le_chic_a_la_francaise" $m2_bg $m2_p $m2_s $m2_tc $m2_ffh1 $m2_ffh2 $m2_grad,
+"le_delice_des_papilles" $m3_bg $m3_p $m3_s $m3_tc $m3_ffh1 $m3_ffh2 $m3_grad,
+"la_palette_du_gout" $m4_bg $m4_p $m4_s $m4_tc $m4_ffh1 $m4_ffh2 $m4_grad;
 
 @each $name, $background, $padding, $shadows, $text_color, $font_h1, $font_h2, $list in $menus{
     .menu_#{$name}{
@@ -23,6 +24,7 @@ $menus:
         h1{
             @include gradient(left, $list);
             font-family: $font_h1;
+            font-size: 1.2rem;
         }
 
         h2{
@@ -36,10 +38,16 @@ $menus:
 .menu_la_note_enchantee{
     @include menu-shapping2($m1_bg, $m1_p, $m1_s);
     
-    h1, h2{
+    h1{
         color: $m1_tc;
+        font-family: $m1_ffh1;
+        
     }
-
+    h2{
+        color: $m1_tc;
+        font-family: $m1_ffh2;
+        
+    }
     i{
         @include gradient(left, $list1 );
         font-size: 2rem;

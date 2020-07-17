@@ -5,6 +5,27 @@
   text-decoration: none;
 }
 
+.FirstCourse--header, .MainCourse--header, .Dessert--header {
+  margin-bottom: 1rem;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.FirstCourse--header img, .MainCourse--header img, .Dessert--header img {
+  width: 25%;
+  height: 40%;
+}
+.FirstCourse--header h3, .MainCourse--header h3, .Dessert--header h3 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.prix {
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
 #main_header {
   background-color: #549B85;
   color: #F1C849;
@@ -21,28 +42,6 @@
   grid-gap: 2rem;
   padding: 5% 5%;
   text-align: center;
-}
-
-.menu_la_note_enchantee {
-  background-color: #fcdfdb;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-.menu_la_note_enchantee h1 {
-  background: linear-gradient(to left, #F0505F, #F78F6A);
-  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "devonshire", cursive;
-}
-.menu_la_note_enchantee h2 {
-  background: linear-gradient(to left, #F0505F, #F78F6A);
-  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "kalam", cursive;
 }
 
 .menu_le_chic_a_la_francaise {
@@ -57,10 +56,57 @@
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Croissant One", cursive;
+  font-size: 1.2rem;
 }
 .menu_le_chic_a_la_francaise h2 {
   background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
   background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "kalam", cursive;
+}
+
+.menu_le_delice_des_papilles {
+  background-color: #f9f9f9;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+.menu_le_delice_des_papilles h1 {
+  background: linear-gradient(to left, #072ddd, #1571f3, #249ef9);
+  background: -webkit-linear-gradient(to left, #072ddd, #1571f3, #249ef9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "dancing script", cursive;
+  font-size: 1.2rem;
+}
+.menu_le_delice_des_papilles h2 {
+  background: linear-gradient(to left, #072ddd, #1571f3, #249ef9);
+  background: -webkit-linear-gradient(to left, #072ddd, #1571f3, #249ef9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "kalam", cursive;
+}
+
+.menu_la_palette_du_gout {
+  background-color: #fdfffd;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+.menu_la_palette_du_gout h1 {
+  background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
+  background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "kaushan script", cursive;
+  font-size: 1.2rem;
+}
+.menu_la_palette_du_gout h2 {
+  background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
+  background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -72,8 +118,13 @@
   padding: 20% 5%;
   box-shadow: 0 0 8px grey;
 }
-.menu_la_note_enchantee h1, .menu_la_note_enchantee h2 {
+.menu_la_note_enchantee h1 {
   color: #3C1218;
+  font-family: "devonshire", cursive;
+}
+.menu_la_note_enchantee h2 {
+  color: #3C1218;
+  font-family: "kalam", cursive;
 }
 .menu_la_note_enchantee i {
   background: linear-gradient(to left, #F0505F, #F78F6A);
@@ -84,8 +135,91 @@
   font-size: 2rem;
 }
 
+.LaNoteEnchantee {
+  background-color: #fcdfdb;
+  color: #3C1218;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  margin-bottom: 4rem;
+}
+.LaNoteEnchantee h2 {
+  font-family: "devonshire", cursive;
+  font-size: 2.5rem;
+  background: linear-gradient(to left, #3C1218, #3C1218);
+  background: -webkit-linear-gradient(to left, #3C1218, #3C1218);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.LaNoteEnchantee p {
+  font-family: "kalam", cursive;
+  font-size: 1.2rem;
+}
+.LaNoteEnchantee h3 {
+  font-family: "kalam", cursive;
+  font-size: 1.4rem;
+}
+.LaNoteEnchantee h4 {
+  font-size: 2rem;
+  font-family: "Devonshire", cursive;
+  margin-left: 5px;
+}
+
+header i {
+  background: linear-gradient(to right, #F0505F, #F78F6A);
+  background: -webkit-linear-gradient(to right, #F0505F, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  margin-top: 5px;
+}
+
+.enchante i {
+  background: linear-gradient(to right, #F0505F, #F78F6A);
+  background: -webkit-linear-gradient(to right, #F0505F, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+.enchante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LaPaletteDuGout {
+  background-color: #fdfffd;
+  color: #3C1218;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  margin-bottom: 4rem;
+}
+.LaPaletteDuGout h2 {
+  font-family: "kaushan script", cursive;
+  font-size: 2.5rem;
+  background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
+  background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.LaPaletteDuGout p {
+  font-family: "kalam", cursive;
+  font-size: 1.2rem;
+}
+.LaPaletteDuGout h3 {
+  font-family: "kalam", cursive;
+  font-size: 1.4rem;
+}
+
+/* scale and fade out menu effect*/
 .scale a {
-  display: inline-block;
+  display: block;
   opacity: 1;
 }
 
@@ -93,174 +227,6 @@
   opacity: 0.3;
   transform: scale(1.3);
   transition: all 0.7s ease;
-}
-
-#main_footer {
-  background-color: #549B85;
-  color: #F1C849;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-#main_footer p {
-  color: #F1C849;
-  font-size: 1.2rem;
-}
-
-<<<<<<< HEAD
-button {
-=======
-#main_header {
-  background-color: #549B85;
-  color: #F1C849;
-  text-align: center;
-  padding: 1.8rem;
-}
-#main_header h1 {
-  font-size: 3rem;
-}
-
-.container_next {
->>>>>>> 7db47ea6443635c2b7df323ebf96ecab580f81d9
-  background-color: #549B85;
-  color: #F1C849;
-  text-align: center;
-  border: none;
-  width: fit-content;
-  display: block;
-  text-align: center;
-  padding: 0.8rem;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  margin: auto;
-  margin-bottom: 10rem;
-  margin-top: 3rem;
-}
-.container_next span {
-  -webkit-animation: dots 1.4s infinite both;
-  animation: dots 1.4s infinite both;
-}
-.container_next span:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.container_next span:nth-child(3) {
-  animation-delay: 0.4s;
-}
-@keyframes dots {
-  0% {
-    opacity: 0.2;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.2;
-  }
-}
-
-<<<<<<< HEAD
-=======
-#menus {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  padding: 5% 5%;
-  text-align: center;
-}
-
-#LaNoteEnchantee {
-  background-color: #fcdfdb;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-  padding: 15% 5%;
-}
-#LaNoteEnchantee h1 {
-  color: #3C1218;
-  font-family: "Devonshire", cursive;
-}
-#LaNoteEnchantee h2 {
-  color: #3C1218;
-  font-family: "Kalam", cursive;
-}
-#LaNoteEnchantee i {
-  background: linear-gradient(to left, #F0505F, #F78F6A);
-  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 2rem;
-}
-
-#LeChicALaFrancaise {
-  background-color: #fef5ff;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-#LeChicALaFrancaise h1 {
-  background: linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
-  background: -webkit-linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Croissant One", cursive;
-  font-size: 1.3rem;
-}
-#LeChicALaFrancaise h2 {
-  font-family: "Kalam", cursive;
-  background: linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
-  background: -webkit-linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-#LeDeliceDesPapilles {
-  background-color: #f9f9f9;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-#LeDeliceDesPapilles h1 {
-  font-family: "Dancing Script", cursive;
-  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-#LeDeliceDesPapilles h2 {
-  font-family: "Kalam", cursive;
-  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-#LaPaletteDuGout {
-  background-color: #fdfffd;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-#LaPaletteDuGout h1 {
-  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Kaushan Script", cursive;
-}
-#LaPaletteDuGout h2 {
-  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Kalam", cursive;
 }
 
 .mentions_legales:hover, .contactez_nous:hover {
@@ -303,131 +269,58 @@ button {
     transform: translate(0);
   }
 }
->>>>>>> 7db47ea6443635c2b7df323ebf96ecab580f81d9
-.LaNoteEnchantee {
-  background-color: #fcdfdb;
-  color: #3C1218;
+#main_footer {
+  background-color: #549B85;
+  color: #F1C849;
   text-align: center;
-  margin: 5px;
-  padding: 2px;
-  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
-.LaNoteEnchantee h2 {
-  font-family: "Devonshire", cursive;
-}
-.LaNoteEnchantee p, .LaNoteEnchantee h3 {
-  font-family: "Kalam", cursive;
-}
-.LaNoteEnchantee i {
-  font-size: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 0.3rem;
-  background: linear-gradient(to right, #F0505F, #F78F6A);
-  background: -webkit-linear-gradient(to right, #F0505F, #F78F6A);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+#main_footer p {
+  color: #F1C849;
+  font-size: 1.2rem;
 }
 
-.FirstCourse--header, .MainCourse--header, .Dessert--header {
-  margin-bottom: 1rem;
+button {
+  background-color: #549B85;
+  color: #F1C849;
+  text-align: center;
+  border: none;
   display: block;
-  justify-content: center;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
 }
-
-.separateur {
-  width: 40%;
-  height: 40%;
+button .blink span {
+  animation-name: dots;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
-.separateur h3 {
-  margin-left: 2px;
-  margin-right: 2px;
+button :nth-child(2) {
+  animation-delay: 0.2s;
 }
-
-.prix {
-  display: inline-block;
-  margin-top: 3px;
-  margin-bottom: 20px;
-  font-weight: bolder;
+button :nth-child(3) {
+  animation-delay: 0.4s;
 }
-
-.enchante h4 {
-  font-family: "Devonshire", cursive;
-}
-.enchante i {
-  font-size: 2rem;
-}
-
-.LeChicALaFrancaise {
-  background-color: #fef5ff;
-  color: black;
-  text-align: center;
-  margin: 5px;
-  padding: 2px;
-  margin-bottom: 4rem;
-}
-.LeChicALaFrancaise h2 {
-  background: linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
-  background: -webkit-linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Croissant One", cursive;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
-.LeChicALaFrancaise p, .LeChicALaFrancaise h3 {
-  font-family: "Kalam", cursive;
-}
-
-.rotate {
-  transform: rotate(1.5turn);
-}
-
-.LeDeliceDesPapilles {
-  background-color: #f9f9f9;
-  color: black;
-  text-align: center;
-  margin: 5px;
-  padding: 2px;
-  margin-bottom: 4rem;
-}
-.LeDeliceDesPapilles h2 {
-  font-family: "Dancing Script", cursive;
-  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
-.LeDeliceDesPapilles p, .LeDeliceDesPapilles h3 {
-  font-family: "Kalam", cursive;
-}
-
-.LaPaletteDuGout {
-  background-color: #fdfffd;
-  color: black;
-  text-align: center;
-  margin: 5px;
-  padding: 2px;
-  margin-bottom: 4rem;
-}
-.LaPaletteDuGout h2 {
-  font-family: "Kaushan Script", cursive;
-  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
-.LaPaletteDuGout p, .LaPaletteDuGout h3 {
-  font-family: "Kalam", cursive;
+@keyframes dots {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
 /*# sourceMappingURL=mobile_first.css.map */
