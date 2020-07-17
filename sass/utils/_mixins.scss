@@ -8,8 +8,14 @@
 //mixin menu Shapping
 @mixin menu-shapping($background_color) {
     background-color: $background_color;
-    padding: 20% 5%;
+    padding: 20% 5% ;
     box-shadow: 0 0 8px grey;    
+}
+
+@mixin menu-shapping2($background_color, $padding, $shadow){
+    background-color: $background_color;
+    padding: $padding ;
+    box-shadow: $shadow; 
 }
 // mixin gradients
 @mixin gradient ($direction, $list){

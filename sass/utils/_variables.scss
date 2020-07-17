@@ -1,0 +1,67 @@
+//template colors
+$template_background_color:#549B85;
+$template_text_color: #F1C849;
+
+
+
+// note enchantee variables
+$background_note_enchantee:#fcdfdb;
+$text_color_note_enchantee: #3C1218;
+$list1: #F0505F, #F78F6A;
+$padding_note_enchantee:(20% 5%);
+$shadow_note_enchantee:(0 0 8px grey);
+$font_family_note_enchantee_h1: "devonshire", cursive;
+$font_family_note_enchantee_h2: "kalam", cursive;
+
+//shorcut variables
+$m1_bg: $background_note_enchantee;
+$m1_tc: $text_color_note_enchantee;
+$m1_grad: $list1;
+$m1_p: $padding_note_enchantee;
+$m1_s: $shadow_note_enchantee;
+$m1_ffh1: $font_family_note_enchantee_h1;
+$m1_ffh2: $font_family_note_enchantee_h2;
+
+
+// menu le chic à la francaise variables
+
+$background_chic_francaise:#fef5ff;
+$text_color_chic_francaise: #3C1218;
+$padding_chic_francaise:(20% 5%);
+$shadow_chic_francaise:(0 0 8px grey);
+$font_family_chic_francaise_h1: "Croissant One", cursive;
+$font_family_chic_francaise_h2: "kalam", cursive;
+$text_color_chic_francaise_first_course:#c67412;
+$text_color_chic_francaise_main_course: #a56799;
+$text_color_chic_francaise_dessert: #6e4ccc;
+$list2: $text_color_chic_francaise_first_course, $text_color_chic_francaise_main_course, $text_color_chic_francaise_dessert;
+
+
+//shorcut variables
+$m2_bg: $background_chic_francaise;
+$m2_tc: $text_color_chic_francaise;
+$m2_grad: $list2;
+$m2_p: $padding_chic_francaise;
+$m2_s: $shadow_chic_francaise;
+$m2_ffh1: $font_family_chic_francaise_h1;
+$m2_ffh2: $font_family_chic_francaise_h2;
+
+
+
+
+
+$background_LeChicALaFrancaise: #fef5ff;
+$text_color_first_course_LeChicALaFrancaise:#c67412;
+$text_color_main_course_LeChicALaFrancaise:#a56799;
+$text_color_dessert_LeChicALaFrancaise:#6e4ccc;
+$list2: $text_color_first_course_LeChicALaFrancaise, $text_color_main_course_LeChicALaFrancaise, $text_color_dessert_LeChicALaFrancaise ;
+
+//menu le delice des papilles variables
+$background_LeDeliceDesPapilles: #f9f9f9;
+$text_color_LeDeliceDesPapilles: #1b88fb;
+$list3: #072ddd, #1571f3, #249ef9;
+
+// menu la palette du gout variables
+$background_LaPaletteDuGout:#fdfffd;
+$text_color_LaPaletteDuGout:#72bf56;
+$list4: #479a44, #83cd60, #beff7f;

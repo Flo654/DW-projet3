@@ -1,0 +1,42 @@
+button {
+    @include template-color;
+    border:none;
+    display:block;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    
+//button animation
+
+    .blink span{
+        
+        animation-name: dots;
+        animation-duration: 1.4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+    }
+    :nth-child(2){
+        animation-delay: .2s;
+    }
+    :nth-child(3){
+        animation-delay: 0.4s;
+    }
+
+
+    @keyframes dots {
+        0%{
+            opacity: .2;
+        }
+
+        20%{
+            opacity: 1;
+        }
+
+        100%{
+            opacity: .2;
+        }
+    }
+}

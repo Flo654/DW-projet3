@@ -5,6 +5,96 @@
   text-decoration: none;
 }
 
+#main_header {
+  background-color: #549B85;
+  color: #F1C849;
+  text-align: center;
+  padding: 1.8rem;
+}
+#main_header h1 {
+  font-size: 3rem;
+}
+
+#menus {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding: 5% 5%;
+  text-align: center;
+}
+
+.menu_la_note_enchantee {
+  background-color: #fcdfdb;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+.menu_la_note_enchantee h1 {
+  background: linear-gradient(to left, #F0505F, #F78F6A);
+  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "devonshire", cursive;
+}
+.menu_la_note_enchantee h2 {
+  background: linear-gradient(to left, #F0505F, #F78F6A);
+  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "kalam", cursive;
+}
+
+.menu_le_chic_a_la_francaise {
+  background-color: #fef5ff;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+.menu_le_chic_a_la_francaise h1 {
+  background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
+  background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Croissant One", cursive;
+}
+.menu_le_chic_a_la_francaise h2 {
+  background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
+  background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "kalam", cursive;
+}
+
+.menu_la_note_enchantee {
+  background-color: #fcdfdb;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+.menu_la_note_enchantee h1, .menu_la_note_enchantee h2 {
+  color: #3C1218;
+}
+.menu_la_note_enchantee i {
+  background: linear-gradient(to left, #F0505F, #F78F6A);
+  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+.scale a {
+  display: inline-block;
+  opacity: 1;
+}
+
+.scale a:hover {
+  opacity: 0.3;
+  transform: scale(1.3);
+  transition: all 0.7s ease;
+}
+
 #main_footer {
   background-color: #549B85;
   color: #F1C849;
@@ -20,16 +110,6 @@
 #main_footer p {
   color: #F1C849;
   font-size: 1.2rem;
-}
-
-#main_header {
-  background-color: #549B85;
-  color: #F1C849;
-  text-align: center;
-  padding: 1.8rem;
-}
-#main_header h1 {
-  font-size: 3rem;
 }
 
 button {
@@ -67,71 +147,6 @@ button :nth-child(3) {
   100% {
     opacity: 0.2;
   }
-}
-
-#menus {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  padding: 5% 5%;
-  text-align: center;
-}
-
-#LaNoteEnchantee {
-  background-color: #fcdfdb;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-  padding: 15% 5%;
-}
-#LaNoteEnchantee h1, #LaNoteEnchantee h2 {
-  color: #3C1218;
-}
-#LaNoteEnchantee i {
-  background: linear-gradient(to left, #F0505F, #F78F6A);
-  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 2rem;
-}
-
-#LeChicALaFrancaise {
-  background-color: #fef5ff;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-#LeChicALaFrancaise h1 {
-  background: linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
-  background: -webkit-linear-gradient(to bottom right, #c67412, #a56799, #6e4ccc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-#LeDeliceDesPapilles {
-  background-color: #f9f9f9;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-#LeDeliceDesPapilles h1 {
-  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-#LaPaletteDuGout {
-  background-color: #fdfffd;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-#LaPaletteDuGout h1 {
-  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .LaNoteEnchantee {

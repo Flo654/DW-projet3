@@ -1,0 +1,47 @@
+//menu container
+
+#menus{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 5% 5%;
+    text-align: center;
+}
+
+//menus framework
+$menus:
+
+"la_note_enchantee" $m1_bg $m1_p $m1_s $m1_tc $m1_ffh1 $m1_ffh2 $m1_grad,
+"le_chic_a_la_francaise" $m2_bg $m2_p $m2_s $m2_tc $m2_ffh1 $m2_ffh2 $m2_grad;
+
+@each $name, $background, $padding, $shadows, $text_color, $font_h1, $font_h2, $list in $menus{
+    .menu_#{$name}{
+        background-color: $background;
+        padding: $padding;
+        box-shadow: $shadows;
+        
+        h1{
+            @include gradient(left, $list);
+            font-family: $font_h1;
+        }
+
+        h2{
+            @include gradient(left, $list);
+            font-family: $font_h2;
+            
+        }      
+    }
+}
+
+.menu_la_note_enchantee{
+    @include menu-shapping2($m1_bg, $m1_p, $m1_s);
+    
+    h1, h2{
+        color: $m1_tc;
+    }
+
+    i{
+        @include gradient(left, $list1 );
+        font-size: 2rem;
+    }
+}
