@@ -9,4 +9,228 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+.container_next {
+    @include template-color;
+    border:none;
+    width: fit-content;
+    display:block;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin:auto;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+
+
+    span{
+        @include dots;
+
+     
+    &:nth-child(2){
+        animation-delay: .2s;
+    }
+    &:nth-child(3){
+        animation-delay: 0.4s;
+    }
+
+    }
+    @include keysdots;
+}
+//end of dots animation 
+
+#menus{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 5% 5%;
+    text-align: center;
+    
+}
+
+#LaNoteEnchantee{
+    @include menu-shapping($background_note_enchantee);
+    padding: 15% 5%;
+    
+    h1{
+        color: $text_color_note_enchantee;
+        font-family: "Devonshire", cursive;
+    }
+    h2{
+        color: $text_color_note_enchantee;
+        font-family: "Kalam", cursive;
+        
+    }
+    i{
+        @include gradient(left, $list1 );
+        font-size: 2rem;
+    }
+}
+
+#LeChicALaFrancaise{
+    @include menu-shapping($background_LeChicALaFrancaise);
+    h1{
+        @include gradient(bottom right, $list2);
+        font-family: "Croissant One", cursive;
+        font-size: 1.3rem;
+    }
+    h2{
+        font-family: "Kalam", cursive;
+        @include gradient(bottom right, $list2);
+
+    }
+}
+
+#LeDeliceDesPapilles{
+    @include menu-shapping($background_LeDeliceDesPapilles );
+    h1{
+        font-family: "Dancing Script", cursive;
+        @include gradient(right,$list3)
+    }
+    h2{
+        font-family: "Kalam", cursive;
+        @include gradient(right,$list3)
+    }
+}
+
+#LaPaletteDuGout{
+    @include menu-shapping($background_LaPaletteDuGout);
+    h1{
+        @include gradient(right, $list4);
+        font-family: "Kaushan Script", cursive;
+    }
+    h2{
+        @include gradient(right, $list4);
+        font-family: "Kalam", cursive;
+
+    }
+}
+//footer animation
+.mentions_legales, .contactez_nous{
+
+    &:hover{
+        @include shake ;}
+}
+
+@include keyframes;
+//end of footer animation
+
+
+//la note enchantée menu page
+.LaNoteEnchantee{
+    background-color: $background_note_enchantee;
+    color:$text_color_note_enchantee;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+    margin-bottom: 4rem;
+
+    h2{
+        font-family: "Devonshire", cursive;
+    }    
+    p, h3{
+        font-family: "Kalam", cursive;
+    }   
+      
+    i{
+        font-size: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 0.3rem;
+        @include gradient(right,$list1);
+    }
+}
+
+.FirstCourse--header, .MainCourse--header, .Dessert--header{
+    margin-bottom: 1rem;
+    display:block;
+    justify-content: center;
+}
+    
+.separateur{
+    width:40%;
+    height:40%;   
+
+    h3{
+        margin-left: 2px;
+        margin-right: 2px;
+        
+    }
+}
+
+.prix{
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.enchante{
+    h4{
+        font-family: "Devonshire", cursive;
+    }
+    i{
+        font-size: 2rem;
+    }
+}
+.LeChicALaFrancaise{
+    background-color: $background_LeChicALaFrancaise;
+    color:black;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+    margin-bottom: 4rem;
+    h2{
+        @include gradient(bottom right, $list2);
+        font-family: "Croissant One", cursive;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    p, h3{
+        font-family: "Kalam", cursive;
+    }
+
+}
+.rotate{
+    transform: rotate(1.5turn)
+}
+.LeDeliceDesPapilles{
+    background-color: $background_LeDeliceDesPapilles;
+    color:black;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+    margin-bottom: 4rem;
+
+    h2{
+        font-family: "Dancing Script", cursive;
+        @include gradient(right,$list3);
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }    
+    p, h3{
+        font-family: "Kalam", cursive;
+    }   
+}
+.LaPaletteDuGout{
+    background-color: $background_LaPaletteDuGout;
+    color:black;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+    margin-bottom: 4rem;
+
+    h2{
+        font-family: "Kaushan Script", cursive;
+        @include gradient(right,$list4);
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }    
+    p, h3{
+        font-family: "Kalam", cursive;
+    }   
+}
+>>>>>>> 7db47ea6443635c2b7df323ebf96ecab580f81d9
