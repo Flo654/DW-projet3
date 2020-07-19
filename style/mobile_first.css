@@ -48,7 +48,7 @@ span {
   }
 }
 .FirstCourse--header, .MainCourse--header, .Dessert--header {
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
   display: block;
   align-items: center;
   justify-content: center;
@@ -58,8 +58,23 @@ span {
   height: 40%;
 }
 .FirstCourse--header h3, .MainCourse--header h3, .Dessert--header h3 {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+.FirstCourse--header h3::after, .MainCourse--header h3::after, .Dessert--header h3::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: block;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  transform-origin: 100% 50%;
+}
+.FirstCourse--header h3:hover::after, .MainCourse--header h3:hover::after, .Dessert--header h3:hover::after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
 }
 
 .prix {
@@ -187,11 +202,13 @@ span {
   text-align: center;
   margin: 5px;
   padding: 2px;
-  margin-bottom: 2rem;
+}
+.LaNoteEnchantee header {
+  margin: 2rem 0;
 }
 .LaNoteEnchantee h2 {
   font-family: "devonshire", cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   background: linear-gradient(to left, #3C1218, #3C1218);
   background: -webkit-linear-gradient(to left, #3C1218, #3C1218);
   background-clip: text;
@@ -243,11 +260,13 @@ header i {
   text-align: center;
   margin: 5px;
   padding: 2px;
-  margin-bottom: 2rem;
+}
+.LaPaletteDuGout header {
+  margin: 2rem 0;
 }
 .LaPaletteDuGout h2 {
   font-family: "kaushan script", cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
   background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
   background-clip: text;
@@ -259,6 +278,62 @@ header i {
   font-size: 1.2rem;
 }
 .LaPaletteDuGout h3 {
+  font-family: "kalam", cursive;
+  font-size: 1.4rem;
+}
+
+.LeChicALaFrancaise {
+  background-color: #fef5ff;
+  color: #3C1218;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+}
+.LeChicALaFrancaise header {
+  margin: 2rem 0;
+}
+.LeChicALaFrancaise h2 {
+  font-family: "Croissant One", cursive;
+  font-size: 2rem;
+  background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
+  background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.LeChicALaFrancaise p {
+  font-family: "kalam", cursive;
+  font-size: 1.2rem;
+}
+.LeChicALaFrancaise h3 {
+  font-family: "kalam", cursive;
+  font-size: 1.4rem;
+}
+
+.LeDeliceDesPapilles {
+  background-color: #f9f9f9;
+  color: #3C1218;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+}
+.LeDeliceDesPapilles header {
+  margin: 2rem 0;
+}
+.LeDeliceDesPapilles h2 {
+  font-family: "dancing script", cursive;
+  font-size: 2rem;
+  background: linear-gradient(to left, #072ddd, #1571f3, #249ef9);
+  background: -webkit-linear-gradient(to left, #072ddd, #1571f3, #249ef9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.LeDeliceDesPapilles p {
+  font-family: "kalam", cursive;
+  font-size: 1.2rem;
+}
+.LeDeliceDesPapilles h3 {
   font-family: "kalam", cursive;
   font-size: 1.4rem;
 }
@@ -321,6 +396,10 @@ header i {
     transform: translate(0);
   }
 }
+.rotate {
+  transform: rotate(180deg);
+}
+
 #main_footer {
   background-color: #549B85;
   color: #F1C849;

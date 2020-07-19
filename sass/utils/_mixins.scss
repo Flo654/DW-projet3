@@ -57,9 +57,7 @@
         100% {
           transform: translate(0);
         }
-      }
-      
-    
+      }   
 }
 
 @mixin shake {
@@ -71,8 +69,7 @@
 
 @mixin dots {
     -webkit-animation: dots 1.4s  infinite both;
-    animation: dots 1.4s infinite both;
-    
+    animation: dots 1.4s infinite both;    
 }
 @mixin keysdots {
     @keyframes dots {
@@ -87,8 +84,7 @@
         100%{
             opacity: .2;
         }
-    }
-    
+    }    
 }
 
 @mixin menu_page_setting ($background, $text_color, $font_family_h2, $font_family_h3, $font_family_p, $list){
@@ -97,11 +93,15 @@
   text-align: center;
   margin: 5px;
   padding: 2px;
-  margin-bottom: 2rem;
+  
+    header{
+      margin: 2rem 0;
+    }
 
     h2 {
      font-family: $font_family_h2;
-      font-size:2.5rem;
+      font-size:2rem;
+      
       @include gradient(left, $list )
     }
 
@@ -113,7 +113,23 @@
     h3 {
       font-family: $font_family_h3;
       font-size:1.4rem ;  
-    }
+    }     
+}
 
-     
+@mixin surligne {
+  &::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      display: block;
+      transform: scaleX(0);
+      transition: transform 300ms ease-in-out;
+      transform-origin: 100% 50%;
+  }
+
+  &:hover::after {
+      transform: scaleX(1);
+      transform-origin: 0% 50%;
+  }
 }

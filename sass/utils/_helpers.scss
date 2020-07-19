@@ -1,16 +1,14 @@
 /* scale and fade out menu effect*/
-.scale a{  
-     
+.scale a{       
     display: inline-block;
     opacity: 1;
     }
-        
+
     .scale a:hover{
         opacity: 0.3;
         transform: scale(1.2);
         transition: all 0.7s ease;
     }
-
 
 // footer animation
 .mentions_legales, .contactez_nous{
@@ -20,3 +18,8 @@
     }
 }
 @include keyframes;
+
+//rotation du séparateur droit
+.rotate {
+    transform: rotate(180deg);
+}
