@@ -15,7 +15,6 @@
 @mixin gradient ($direction, $list){
     background: linear-gradient(to $direction, $list);
     background: -webkit-linear-gradient(to $direction, $list);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent    
 }

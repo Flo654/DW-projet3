@@ -110,7 +110,6 @@ span {
 .menu_le_chic_a_la_francaise h1 {
   background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
   background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Croissant One", cursive;
@@ -120,7 +119,6 @@ span {
 .menu_le_chic_a_la_francaise h2 {
   background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
   background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "kalam", cursive;
@@ -134,7 +132,6 @@ span {
 .menu_le_delice_des_papilles h1 {
   background: linear-gradient(to left, #072ddd, #1571f3, #249ef9);
   background: -webkit-linear-gradient(to left, #072ddd, #1571f3, #249ef9);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "dancing script", cursive;
@@ -144,7 +141,6 @@ span {
 .menu_le_delice_des_papilles h2 {
   background: linear-gradient(to left, #072ddd, #1571f3, #249ef9);
   background: -webkit-linear-gradient(to left, #072ddd, #1571f3, #249ef9);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "kalam", cursive;
@@ -158,7 +154,6 @@ span {
 .menu_la_palette_du_gout h1 {
   background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
   background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "kaushan script", cursive;
@@ -168,7 +163,6 @@ span {
 .menu_la_palette_du_gout h2 {
   background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
   background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "kalam", cursive;
@@ -190,7 +184,6 @@ span {
 .menu_la_note_enchantee i {
   background: linear-gradient(to left, #F0505F, #F78F6A);
   background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -211,7 +204,6 @@ span {
   font-size: 2rem;
   background: linear-gradient(to left, #3C1218, #3C1218);
   background: -webkit-linear-gradient(to left, #3C1218, #3C1218);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -232,7 +224,6 @@ span {
 header i {
   background: linear-gradient(to right, #F0505F, #F78F6A);
   background: -webkit-linear-gradient(to right, #F0505F, #F78F6A);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 3rem;
@@ -242,7 +233,6 @@ header i {
 .enchante i {
   background: linear-gradient(to right, #F0505F, #F78F6A);
   background: -webkit-linear-gradient(to right, #F0505F, #F78F6A);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -269,7 +259,6 @@ header i {
   font-size: 2rem;
   background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
   background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -297,7 +286,6 @@ header i {
   font-size: 2rem;
   background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
   background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -325,7 +313,6 @@ header i {
   font-size: 2rem;
   background: linear-gradient(to left, #072ddd, #1571f3, #249ef9);
   background: -webkit-linear-gradient(to left, #072ddd, #1571f3, #249ef9);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
