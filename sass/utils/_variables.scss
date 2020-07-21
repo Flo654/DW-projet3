@@ -8,18 +8,19 @@ $template_text_color: #F1C849;
 $background_note_enchantee:#fcdfdb;
 $text_color_note_enchantee: #3C1218;
 $list1: #F0505F, #F78F6A;
-$padding_note_enchantee:(20% 5%);
-$shadow_note_enchantee:(0 0 8px grey);
+$padding_menus-index:(60% 5%);
+$shadow_menus_index:(0 0 8px grey);
 $font_family_note_enchantee_h1: "devonshire", cursive;
 $font_family_note_enchantee_h2: "kalam", cursive;
 $list0: #3C1218, #3C1218;
+$list_null: null;
 
 //shorcut variables
 $m1_bg: $background_note_enchantee;
 $m1_tc: $text_color_note_enchantee;
 $m1_grad: $list1;
-$m1_p: $padding_note_enchantee;
-$m1_s: $shadow_note_enchantee;
+$m1_p: $padding_menus-index;
+$m1_s: $shadow_menus_index;
 $m1_ffh1: $font_family_note_enchantee_h1;
 $m1_ffh2: $font_family_note_enchantee_h2;
 
@@ -28,7 +29,7 @@ $m1_ffh2: $font_family_note_enchantee_h2;
 
 $background_chic_francaise:#fef5ff;
 $text_color_chic_francaise: #3C1218;
-$padding_chic_francaise:(20% 5%);
+$padding_chic_francaise:(60% 5%);
 $shadow_chic_francaise:(0 0 8px grey);
 $font_family_chic_francaise_h1: "Croissant One", cursive;
 $font_family_chic_francaise_h2: "kalam", cursive;
@@ -41,6 +42,7 @@ $list2: $text_color_chic_francaise_first_course, $text_color_chic_francaise_main
 //shorcut variables
 $m2_bg: $background_chic_francaise;
 $m2_tc: $text_color_chic_francaise;
+$m2_tc2: $text_color_chic_francaise_first_course;
 $m2_grad: $list2;
 $m2_p: $padding_chic_francaise;
 $m2_s: $shadow_chic_francaise;
@@ -53,7 +55,7 @@ $m2_ffh2: $font_family_chic_francaise_h2;
 
 $background_delice_papilles: #f9f9f9;
 $text_color_delice_papilles: #1b88fb;
-$padding_delice_papilles:(20% 5%);
+$padding_delice_papilles:(60% 5%);
 $shadow_delice_papilles:(0 0 8px grey);
 $font_family_delice_papilles_h1: "dancing script", cursive;
 $font_family_delice_papilles_h2: "kalam", cursive;
@@ -74,7 +76,7 @@ $m3_ffh2: $font_family_delice_papilles_h2;
 // menu la palette du gout variables
 $background_palette_gout:#fdfffd;
 $text_color_palette_gout:#72bf56;
-$padding_palette_gout:(20% 5%);
+$padding_palette_gout:(60% 5%);
 $shadow_palette_gout:(0 0 8px grey);
 $font_family_palette_gout_h1: "kaushan script", cursive;
 $font_family_palette_gout_h2: "kalam", cursive;

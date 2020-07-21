@@ -10,47 +10,49 @@
 
 //menus framework
 $menus:
+"la_note_enchantee" $m1_bg  $m1_tc $m1_ffh1 $m1_ffh2 0,
+"le_chic_a_la_francaise" $m2_bg  $m2_tc2 $m2_ffh1 $m2_ffh2 $m2_grad,
+"le_delice_des_papilles" $m3_bg  $m3_tc $m3_ffh1 $m3_ffh2 $m3_grad,
+"la_palette_du_gout" $m4_bg  $m4_tc $m4_ffh1 $m4_ffh2 $m4_grad;
 
-"le_chic_a_la_francaise" $m2_bg $m2_p $m2_s $m2_tc $m2_ffh1 $m2_ffh2 $m2_grad,
-"le_delice_des_papilles" $m3_bg $m3_p $m3_s $m3_tc $m3_ffh1 $m3_ffh2 $m3_grad,
-"la_palette_du_gout" $m4_bg $m4_p $m4_s $m4_tc $m4_ffh1 $m4_ffh2 $m4_grad;
-
-@each $name, $background, $padding, $shadows, $text_color, $font_h1, $font_h2, $list in $menus{
+@each $name, $background, $text_color, $font_h1, $font_h2, $list in $menus{
     .menu_#{$name}{
+        // reglages communs aux 4 menus
         background-color: $background;
-        padding: $padding;
-        box-shadow: $shadows;
+        padding: $padding_menus-index;
+        box-shadow: $shadow_menus_index;
+
+        h3{
+            color: $text_color;
+            font-family: $font_h2;
+            font-size: 5vw;            
+        } 
+     
         
-        h1{
-            @include gradient(left, $list);
-            font-family: $font_h1;
-            font-size: 1.2rem;
-            padding-left: 3px;
+        // condition pour menu la note enchanté: l'icone du menu  est en dégradé alors que pour tous les autre menus le titre du menu est en dégradé
+        @if  $list == 0  {
+            h2{
+                color: $m1_tc;
+                font-family: $m1_ffh1;
+                font-size: 6vw;                
+            }
+            
+            i{
+                @include gradient(left, $list1 );
+                font-size: 7vw;
+            }
         }
 
-        h2{
-            @include gradient(left, $list);
-            font-family: $font_h2;
-            
-        }      
+        @else {
+                     
+            h2{
+                @include gradient(right, $list);
+                font-family: $font_h1;
+                font-size: 5.9vw;
+                padding-left: 5px;
+            }
+        }
+        // fin de condition
     }
 }
 
-.menu_la_note_enchantee{
-    @include menu-shapping2($m1_bg, $m1_p, $m1_s);
-    
-    h1{
-        color: $m1_tc;
-        font-family: $m1_ffh1;
-        
-    }
-    h2{
-        color: $m1_tc;
-        font-family: $m1_ffh2;
-        
-    }
-    i{
-        @include gradient(left, $list1 );
-        font-size: 2rem;
-    }
-}

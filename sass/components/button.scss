@@ -1,14 +1,13 @@
 .container_next {
-   display: block;
+   display: table;
    text-align: center;
    @include template_color;
-   width: fit-content;
    margin: 2rem auto 4rem;
-   padding: 1.4rem;
+   padding: 1.2rem;
    border-radius: 20px;
 
    p{
-       font-size: 1.2rem;
+       font-size: 5.2vw;
        font-family: 'Roboto', sans-serif;
    }
 }

@@ -6,18 +6,17 @@
 }
 
 .container_next {
-  display: block;
+  display: table;
   text-align: center;
   background-color: #549B85;
   color: #F1C849;
   text-align: center;
-  width: fit-content;
   margin: 2rem auto 4rem;
-  padding: 1.4rem;
+  padding: 1.2rem;
   border-radius: 20px;
 }
 .container_next p {
-  font-size: 1.2rem;
+  font-size: 5.2vw;
   font-family: "Roboto", sans-serif;
 }
 
@@ -51,16 +50,17 @@ span {
   /*margin-bottom: 1rem;*/
   display: block;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .FirstCourse--header img, .MainCourse--header img, .Dessert--header img {
-  width: 25%;
-  height: 40%;
+  width: 20%;
+  height: 60%;
 }
 .FirstCourse--header h3, .MainCourse--header h3, .Dessert--header h3 {
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
+  /* margin-left: auto;
+   margin-right: auto;*/
+  /*width: fit-content;*/
+  font-size: 1rem;
 }
 .FirstCourse--header h3::after, .MainCourse--header h3::after, .Dessert--header h3::after {
   content: "";
@@ -102,91 +102,87 @@ span {
   text-align: center;
 }
 
-.menu_le_chic_a_la_francaise {
-  background-color: #fef5ff;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-.menu_le_chic_a_la_francaise h1 {
-  background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
-  background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Croissant One", cursive;
-  font-size: 1.2rem;
-  padding-left: 3px;
-}
-.menu_le_chic_a_la_francaise h2 {
-  background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
-  background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "kalam", cursive;
-}
-
-.menu_le_delice_des_papilles {
-  background-color: #f9f9f9;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-.menu_le_delice_des_papilles h1 {
-  background: linear-gradient(to left, #072ddd, #1571f3, #249ef9);
-  background: -webkit-linear-gradient(to left, #072ddd, #1571f3, #249ef9);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "dancing script", cursive;
-  font-size: 1.2rem;
-  padding-left: 3px;
-}
-.menu_le_delice_des_papilles h2 {
-  background: linear-gradient(to left, #072ddd, #1571f3, #249ef9);
-  background: -webkit-linear-gradient(to left, #072ddd, #1571f3, #249ef9);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "kalam", cursive;
-}
-
-.menu_la_palette_du_gout {
-  background-color: #fdfffd;
-  padding: 20% 5%;
-  box-shadow: 0 0 8px grey;
-}
-.menu_la_palette_du_gout h1 {
-  background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
-  background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "kaushan script", cursive;
-  font-size: 1.2rem;
-  padding-left: 3px;
-}
-.menu_la_palette_du_gout h2 {
-  background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
-  background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "kalam", cursive;
-}
-
 .menu_la_note_enchantee {
   background-color: #fcdfdb;
-  padding: 20% 5%;
+  padding: 60% 5%;
   box-shadow: 0 0 8px grey;
 }
-.menu_la_note_enchantee h1 {
+.menu_la_note_enchantee h3 {
   color: #3C1218;
-  font-family: "devonshire", cursive;
+  font-family: "kalam", cursive;
+  font-size: 5vw;
 }
 .menu_la_note_enchantee h2 {
   color: #3C1218;
-  font-family: "kalam", cursive;
+  font-family: "devonshire", cursive;
+  font-size: 6vw;
 }
 .menu_la_note_enchantee i {
   background: linear-gradient(to left, #F0505F, #F78F6A);
   background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 2rem;
+  font-size: 7vw;
+}
+
+.menu_le_chic_a_la_francaise {
+  background-color: #fef5ff;
+  padding: 60% 5%;
+  box-shadow: 0 0 8px grey;
+}
+.menu_le_chic_a_la_francaise h3 {
+  color: #c67412;
+  font-family: "kalam", cursive;
+  font-size: 5vw;
+}
+.menu_le_chic_a_la_francaise h2 {
+  background: linear-gradient(to right, #c67412, #a56799, #6e4ccc);
+  background: -webkit-linear-gradient(to right, #c67412, #a56799, #6e4ccc);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 5.9vw;
+  padding-left: 5px;
+}
+
+.menu_le_delice_des_papilles {
+  background-color: #f9f9f9;
+  padding: 60% 5%;
+  box-shadow: 0 0 8px grey;
+}
+.menu_le_delice_des_papilles h3 {
+  color: #1b88fb;
+  font-family: "kalam", cursive;
+  font-size: 5vw;
+}
+.menu_le_delice_des_papilles h2 {
+  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "dancing script", cursive;
+  font-size: 5.9vw;
+  padding-left: 5px;
+}
+
+.menu_la_palette_du_gout {
+  background-color: #fdfffd;
+  padding: 60% 5%;
+  box-shadow: 0 0 8px grey;
+}
+.menu_la_palette_du_gout h3 {
+  color: #72bf56;
+  font-family: "kalam", cursive;
+  font-size: 5vw;
+}
+.menu_la_palette_du_gout h2 {
+  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "kaushan script", cursive;
+  font-size: 5.9vw;
+  padding-left: 5px;
 }
 
 .LaNoteEnchantee {
@@ -213,7 +209,7 @@ span {
 }
 .LaNoteEnchantee h3 {
   font-family: "kalam", cursive;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .LaNoteEnchantee h4 {
   font-size: 2rem;
@@ -268,7 +264,7 @@ header i {
 }
 .LaPaletteDuGout h3 {
   font-family: "kalam", cursive;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .LeChicALaFrancaise {
@@ -295,7 +291,7 @@ header i {
 }
 .LeChicALaFrancaise h3 {
   font-family: "kalam", cursive;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .LeDeliceDesPapilles {
@@ -322,7 +318,7 @@ header i {
 }
 .LeDeliceDesPapilles h3 {
   font-family: "kalam", cursive;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .mentions {
@@ -401,7 +397,7 @@ header i {
 }
 #main_footer p {
   color: #F1C849;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
 }
 
