@@ -1,3 +1,14 @@
 .LeChicALaFrancaise{
     @include menu_page_setting ($m2_bg, $m2_tc, $m2_ffh1, $m2_ffh2, $m2_ffh2, $list2)
 }
+
+.FirstCourse_chic{
+    color: $text_color_chic_francaise_first_course;
+}
+.MainCourse_chic {
+    color: $text_color_chic_francaise_main_course;
+}
+
+.Dessert_chic {
+    color: $text_color_chic_francaise_dessert;
+}

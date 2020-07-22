@@ -11,7 +11,7 @@
 header i {
       
     @include gradient (right, $list1);
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top:5px;
   }
   
@@ -24,4 +24,5 @@ header i {
         display:flex;
         justify-content:center;
         align-items:center;
+        margin-top: 1.5rem;
    }

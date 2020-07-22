@@ -5,6 +5,142 @@
   text-decoration: none;
 }
 
+#main_header {
+  background-color: #549B85;
+  color: #F1C849;
+  text-align: center;
+  padding: 1.8rem;
+}
+#main_header h1 {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#menus {
+  display: grid;
+  /*grid-template-columns: 1fr 1fr;*/
+  grid-template-columns: 1fr;
+  font-size: 3.8vw;
+  grid-gap: 2rem;
+  padding: 5% 5%;
+  text-align: center;
+}
+#menus h3 {
+  font-size: 8vw;
+}
+@media (min-width: 580px) {
+  #menus {
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.7vw;
+  }
+  #menus h3 {
+    font-size: 4vw;
+  }
+}
+
+.menu_la_note_enchantee {
+  background-color: #fcdfdb;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+@media (min-width: 580px) {
+  .menu_la_note_enchantee {
+    padding: 60% 5%;
+  }
+}
+.menu_la_note_enchantee h3 {
+  color: #3C1218;
+  font-family: "kalam", cursive;
+}
+.menu_la_note_enchantee h2 {
+  color: #3C1218;
+  font-family: "devonshire", cursive;
+}
+.menu_la_note_enchantee i {
+  background: linear-gradient(to left, #F0505F, #F78F6A);
+  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 8vw;
+}
+@media (min-width: 580px) {
+  .menu_la_note_enchantee i {
+    font-size: 4vw;
+  }
+}
+
+.menu_le_chic_a_la_francaise {
+  background-color: #fef5ff;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+@media (min-width: 580px) {
+  .menu_le_chic_a_la_francaise {
+    padding: 60% 5%;
+  }
+}
+.menu_le_chic_a_la_francaise h3 {
+  color: #c67412;
+  font-family: "kalam", cursive;
+}
+.menu_le_chic_a_la_francaise h2 {
+  background: linear-gradient(to right, #c67412, #a56799, #6e4ccc);
+  background: -webkit-linear-gradient(to right, #c67412, #a56799, #6e4ccc);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Croissant One", cursive;
+  /*font-size: 5.9vw;*/
+  padding-left: 5px;
+}
+
+.menu_le_delice_des_papilles {
+  background-color: #f9f9f9;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+@media (min-width: 580px) {
+  .menu_le_delice_des_papilles {
+    padding: 60% 5%;
+  }
+}
+.menu_le_delice_des_papilles h3 {
+  color: #1b88fb;
+  font-family: "kalam", cursive;
+}
+.menu_le_delice_des_papilles h2 {
+  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "dancing script", cursive;
+  /*font-size: 5.9vw;*/
+  padding-left: 5px;
+}
+
+.menu_la_palette_du_gout {
+  background-color: #fdfffd;
+  padding: 20% 5%;
+  box-shadow: 0 0 8px grey;
+}
+@media (min-width: 580px) {
+  .menu_la_palette_du_gout {
+    padding: 60% 5%;
+  }
+}
+.menu_la_palette_du_gout h3 {
+  color: #72bf56;
+  font-family: "kalam", cursive;
+}
+.menu_la_palette_du_gout h2 {
+  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "kaushan script", cursive;
+  /*font-size: 5.9vw;*/
+  padding-left: 5px;
+}
+
 .container_next {
   display: table;
   text-align: center;
@@ -16,8 +152,17 @@
   border-radius: 20px;
 }
 .container_next p {
-  font-size: 5.2vw;
   font-family: "Roboto", sans-serif;
+}
+@media (min-width: 480px) {
+  .container_next p {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 580px) {
+  .container_next p {
+    font-size: 2vw;
+  }
 }
 
 span {
@@ -47,20 +192,36 @@ span {
   }
 }
 .FirstCourse--header, .MainCourse--header, .Dessert--header {
-  /*margin-bottom: 1rem;*/
   display: block;
+  margin: 2rem 0;
   align-items: center;
-  justify-content: space-between;
+}
+@media (min-width: 580px) {
+  .FirstCourse--header, .MainCourse--header, .Dessert--header {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 .FirstCourse--header img, .MainCourse--header img, .Dessert--header img {
-  width: 20%;
+  width: 25%;
   height: 60%;
 }
 .FirstCourse--header h3, .MainCourse--header h3, .Dessert--header h3 {
-  /* margin-left: auto;
-   margin-right: auto;*/
-  /*width: fit-content;*/
-  font-size: 1rem;
+  font-size: 1.3rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media (min-width: 580px) {
+  .FirstCourse--header h3, .MainCourse--header h3, .Dessert--header h3 {
+    width: unset;
+    margin: unset;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 580px) and (min-width: 960px) {
+  .FirstCourse--header h3, .MainCourse--header h3, .Dessert--header h3 {
+    font-size: 1.7rem;
+  }
 }
 .FirstCourse--header h3::after, .MainCourse--header h3::after, .Dessert--header h3::after {
   content: "";
@@ -77,112 +238,47 @@ span {
   transform-origin: 0% 50%;
 }
 
+.FirstCourse div, .MainCourse div, .Dessert div {
+  display: block;
+  justify-content: space-between;
+}
+@media (min-width: 960px) {
+  .FirstCourse div, .MainCourse div, .Dessert div {
+    display: flex;
+    margin: 0 10%;
+  }
+}
+
 .prix {
   display: inline-block;
-  margin-top: 3px;
-  margin-bottom: 20px;
 }
 
-#main_header {
-  background-color: #549B85;
-  color: #F1C849;
+section p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 580px) {
+  section p {
+    font-size: 1.5rem;
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+}
+
+header h2 {
+  display: table;
   text-align: center;
-  padding: 1.8rem;
+  margin: 0 auto;
+  font-size: 1.55rem;
 }
-#main_header h1 {
-  font-size: 3rem;
-  font-family: "Roboto", sans-serif;
-}
-
-#menus {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  padding: 5% 5%;
-  text-align: center;
+@media (min-width: 580px) {
+  header h2 {
+    font-size: 2rem;
+  }
 }
 
-.menu_la_note_enchantee {
-  background-color: #fcdfdb;
-  padding: 60% 5%;
-  box-shadow: 0 0 8px grey;
-}
-.menu_la_note_enchantee h3 {
-  color: #3C1218;
-  font-family: "kalam", cursive;
-  font-size: 5vw;
-}
-.menu_la_note_enchantee h2 {
-  color: #3C1218;
-  font-family: "devonshire", cursive;
-  font-size: 6vw;
-}
-.menu_la_note_enchantee i {
-  background: linear-gradient(to left, #F0505F, #F78F6A);
-  background: -webkit-linear-gradient(to left, #F0505F, #F78F6A);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 7vw;
-}
-
-.menu_le_chic_a_la_francaise {
-  background-color: #fef5ff;
-  padding: 60% 5%;
-  box-shadow: 0 0 8px grey;
-}
-.menu_le_chic_a_la_francaise h3 {
-  color: #c67412;
-  font-family: "kalam", cursive;
-  font-size: 5vw;
-}
-.menu_le_chic_a_la_francaise h2 {
-  background: linear-gradient(to right, #c67412, #a56799, #6e4ccc);
-  background: -webkit-linear-gradient(to right, #c67412, #a56799, #6e4ccc);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Croissant One", cursive;
-  font-size: 5.9vw;
-  padding-left: 5px;
-}
-
-.menu_le_delice_des_papilles {
-  background-color: #f9f9f9;
-  padding: 60% 5%;
-  box-shadow: 0 0 8px grey;
-}
-.menu_le_delice_des_papilles h3 {
-  color: #1b88fb;
-  font-family: "kalam", cursive;
-  font-size: 5vw;
-}
-.menu_le_delice_des_papilles h2 {
-  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "dancing script", cursive;
-  font-size: 5.9vw;
-  padding-left: 5px;
-}
-
-.menu_la_palette_du_gout {
-  background-color: #fdfffd;
-  padding: 60% 5%;
-  box-shadow: 0 0 8px grey;
-}
-.menu_la_palette_du_gout h3 {
-  color: #72bf56;
-  font-family: "kalam", cursive;
-  font-size: 5vw;
-}
-.menu_la_palette_du_gout h2 {
-  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "kaushan script", cursive;
-  font-size: 5.9vw;
-  padding-left: 5px;
+.Dessert {
+  margin-bottom: 4rem;
 }
 
 .LaNoteEnchantee {
@@ -197,19 +293,16 @@ span {
 }
 .LaNoteEnchantee h2 {
   font-family: "devonshire", cursive;
-  font-size: 2rem;
-  background: linear-gradient(to left, #3C1218, #3C1218);
-  background: -webkit-linear-gradient(to left, #3C1218, #3C1218);
+  background: linear-gradient(to right, #3C1218, #3C1218);
+  background: -webkit-linear-gradient(to right, #3C1218, #3C1218);
   -webkit-background-clip: text;
   color: transparent;
 }
 .LaNoteEnchantee p {
   font-family: "kalam", cursive;
-  font-size: 1.2rem;
 }
 .LaNoteEnchantee h3 {
   font-family: "kalam", cursive;
-  font-size: 1.2rem;
 }
 .LaNoteEnchantee h4 {
   font-size: 2rem;
@@ -222,7 +315,7 @@ header i {
   background: -webkit-linear-gradient(to right, #F0505F, #F78F6A);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-top: 5px;
 }
 
@@ -238,6 +331,7 @@ header i {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .LaPaletteDuGout {
@@ -252,19 +346,16 @@ header i {
 }
 .LaPaletteDuGout h2 {
   font-family: "kaushan script", cursive;
-  font-size: 2rem;
-  background: linear-gradient(to left, #479a44, #83cd60, #beff7f);
-  background: -webkit-linear-gradient(to left, #479a44, #83cd60, #beff7f);
+  background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
+  background: -webkit-linear-gradient(to right, #479a44, #83cd60, #beff7f);
   -webkit-background-clip: text;
   color: transparent;
 }
 .LaPaletteDuGout p {
   font-family: "kalam", cursive;
-  font-size: 1.2rem;
 }
 .LaPaletteDuGout h3 {
   font-family: "kalam", cursive;
-  font-size: 1.2rem;
 }
 
 .LeChicALaFrancaise {
@@ -279,19 +370,28 @@ header i {
 }
 .LeChicALaFrancaise h2 {
   font-family: "Croissant One", cursive;
-  font-size: 2rem;
-  background: linear-gradient(to left, #c67412, #a56799, #6e4ccc);
-  background: -webkit-linear-gradient(to left, #c67412, #a56799, #6e4ccc);
+  background: linear-gradient(to right, #c67412, #a56799, #6e4ccc);
+  background: -webkit-linear-gradient(to right, #c67412, #a56799, #6e4ccc);
   -webkit-background-clip: text;
   color: transparent;
 }
 .LeChicALaFrancaise p {
   font-family: "kalam", cursive;
-  font-size: 1.2rem;
 }
 .LeChicALaFrancaise h3 {
   font-family: "kalam", cursive;
-  font-size: 1.2rem;
+}
+
+.FirstCourse_chic {
+  color: #c67412;
+}
+
+.MainCourse_chic {
+  color: #a56799;
+}
+
+.Dessert_chic {
+  color: #6e4ccc;
 }
 
 .LeDeliceDesPapilles {
@@ -306,19 +406,16 @@ header i {
 }
 .LeDeliceDesPapilles h2 {
   font-family: "dancing script", cursive;
-  font-size: 2rem;
-  background: linear-gradient(to left, #072ddd, #1571f3, #249ef9);
-  background: -webkit-linear-gradient(to left, #072ddd, #1571f3, #249ef9);
+  background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
+  background: -webkit-linear-gradient(to right, #072ddd, #1571f3, #249ef9);
   -webkit-background-clip: text;
   color: transparent;
 }
 .LeDeliceDesPapilles p {
   font-family: "kalam", cursive;
-  font-size: 1.2rem;
 }
 .LeDeliceDesPapilles h3 {
   font-family: "kalam", cursive;
-  font-size: 1.2rem;
 }
 
 .mentions {
