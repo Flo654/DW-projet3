@@ -15,6 +15,10 @@
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
 }
+#main_header a {
+  text-decoration: none;
+  color: #F1C849;
+}
 
 #menus {
   display: grid;
@@ -304,6 +308,13 @@ header h2 {
   margin: 5px;
   padding: 2px;
 }
+@media (min-width: 1023px) {
+  .LaNoteEnchantee {
+    width: 80%;
+    margin: 5rem auto;
+    box-shadow: 0 0 8px grey;
+  }
+}
 .LaNoteEnchantee header {
   margin: 2rem 0;
 }
@@ -331,7 +342,7 @@ header i {
   background: -webkit-linear-gradient(to right, #F0505F, #F78F6A);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 5px;
 }
 
@@ -357,6 +368,13 @@ header i {
   margin: 5px;
   padding: 2px;
 }
+@media (min-width: 1023px) {
+  .LaPaletteDuGout {
+    width: 80%;
+    margin: 5rem auto;
+    box-shadow: 0 0 8px grey;
+  }
+}
 .LaPaletteDuGout header {
   margin: 2rem 0;
 }
@@ -380,6 +398,13 @@ header i {
   text-align: center;
   margin: 5px;
   padding: 2px;
+}
+@media (min-width: 1023px) {
+  .LeChicALaFrancaise {
+    width: 80%;
+    margin: 5rem auto;
+    box-shadow: 0 0 8px grey;
+  }
 }
 .LeChicALaFrancaise header {
   margin: 2rem 0;
@@ -416,6 +441,13 @@ header i {
   text-align: center;
   margin: 5px;
   padding: 2px;
+}
+@media (min-width: 1023px) {
+  .LeDeliceDesPapilles {
+    width: 80%;
+    margin: 5rem auto;
+    box-shadow: 0 0 8px grey;
+  }
 }
 .LeDeliceDesPapilles header {
   margin: 2rem 0;

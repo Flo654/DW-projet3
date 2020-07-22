@@ -92,7 +92,11 @@
   text-align: center;
   margin: 5px;
   padding: 2px;
-  
+  @include responsive(l){
+    width: 80%;
+    margin: 5rem auto ;
+    box-shadow: $shadow_menus_index;
+  }
     header{
       margin: 2rem 0;
     }
