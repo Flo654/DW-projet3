@@ -18,7 +18,6 @@
 
 #menus {
   display: grid;
-  /*grid-template-columns: 1fr 1fr;*/
   grid-template-columns: 1fr;
   font-size: 3.8vw;
   grid-gap: 2rem;
@@ -42,15 +41,18 @@
   background-color: #fcdfdb;
   padding: 20% 5%;
   box-shadow: 0 0 8px grey;
-}
-@media (min-width: 580px) {
-  .menu_la_note_enchantee {
-    padding: 60% 5%;
-  }
+  /*@include responsive (s){
+      padding: $padding_menus-index;
+  }*/
 }
 .menu_la_note_enchantee h3 {
   color: #3C1218;
   font-family: "kalam", cursive;
+}
+@media (min-width: 580px) {
+  .menu_la_note_enchantee {
+    padding: 50% 5%;
+  }
 }
 .menu_la_note_enchantee h2 {
   color: #3C1218;
@@ -73,15 +75,18 @@
   background-color: #fef5ff;
   padding: 20% 5%;
   box-shadow: 0 0 8px grey;
+  /*@include responsive (s){
+      padding: $padding_menus-index;
+  }*/
+}
+.menu_le_chic_a_la_francaise h3 {
+  color: #c67412;
+  font-family: "kalam", cursive;
 }
 @media (min-width: 580px) {
   .menu_le_chic_a_la_francaise {
     padding: 60% 5%;
   }
-}
-.menu_le_chic_a_la_francaise h3 {
-  color: #c67412;
-  font-family: "kalam", cursive;
 }
 .menu_le_chic_a_la_francaise h2 {
   background: linear-gradient(to right, #c67412, #a56799, #6e4ccc);
@@ -97,15 +102,18 @@
   background-color: #f9f9f9;
   padding: 20% 5%;
   box-shadow: 0 0 8px grey;
+  /*@include responsive (s){
+      padding: $padding_menus-index;
+  }*/
+}
+.menu_le_delice_des_papilles h3 {
+  color: #1b88fb;
+  font-family: "kalam", cursive;
 }
 @media (min-width: 580px) {
   .menu_le_delice_des_papilles {
     padding: 60% 5%;
   }
-}
-.menu_le_delice_des_papilles h3 {
-  color: #1b88fb;
-  font-family: "kalam", cursive;
 }
 .menu_le_delice_des_papilles h2 {
   background: linear-gradient(to right, #072ddd, #1571f3, #249ef9);
@@ -121,15 +129,18 @@
   background-color: #fdfffd;
   padding: 20% 5%;
   box-shadow: 0 0 8px grey;
+  /*@include responsive (s){
+      padding: $padding_menus-index;
+  }*/
+}
+.menu_la_palette_du_gout h3 {
+  color: #72bf56;
+  font-family: "kalam", cursive;
 }
 @media (min-width: 580px) {
   .menu_la_palette_du_gout {
     padding: 60% 5%;
   }
-}
-.menu_la_palette_du_gout h3 {
-  color: #72bf56;
-  font-family: "kalam", cursive;
 }
 .menu_la_palette_du_gout h2 {
   background: linear-gradient(to right, #479a44, #83cd60, #beff7f);
@@ -218,9 +229,14 @@ span {
     font-size: 1.5rem;
   }
 }
-@media (min-width: 580px) and (min-width: 960px) {
+@media (min-width: 960px) {
   .FirstCourse--header h3, .MainCourse--header h3, .Dessert--header h3 {
     font-size: 1.7rem;
+  }
+}
+@media (min-width: 1023px) {
+  .FirstCourse--header h3, .MainCourse--header h3, .Dessert--header h3 {
+    margin: 4rem 0;
   }
 }
 .FirstCourse--header h3::after, .MainCourse--header h3::after, .Dessert--header h3::after {

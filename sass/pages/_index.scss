@@ -2,10 +2,8 @@
 
 #menus{
     display: grid;
-    /*grid-template-columns: 1fr 1fr;*/
-   
-        grid-template-columns: 1fr;
-        font-size: 3.8vw;
+    grid-template-columns: 1fr;
+    font-size: 3.8vw;
 
         h3{
             font-size: 8vw;
@@ -21,8 +19,7 @@
     }
     grid-gap: 2rem;
     padding: 5% 5%;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 //menus framework
@@ -37,19 +34,23 @@ $menus:
         // reglages communs aux 4 menus
         background-color: $background;
         padding: $padding_menus-index_xs;
-
-         @include responsive (s){
-            padding: $padding_menus-index;
-        }
         box-shadow: $shadow_menus_index;
-
         h3{
             color: $text_color;
             font-family: $font_h2;
-        }    
+        }
+
+         /*@include responsive (s){
+            padding: $padding_menus-index;
+        }*/
         
+
+               
         // condition pour menu la note enchanté: l'icone du menu  est en dégradé alors que pour tous les autre menus le titre du menu est en dégradé
         @if  $list == 0  {
+            @include responsive (s){
+                padding: $padding_menus-note_enchantee;
+            }
             h2{
                 color: $m1_tc;
                 font-family: $m1_ffh1;
@@ -67,6 +68,9 @@ $menus:
         }
 
         @else {
+            @include responsive (s){
+                padding: $padding_menus-index;
+            }
                      
             h2{
                 @include gradient(right, $list);

@@ -139,6 +139,7 @@ $breakpoints: (
   ('xs', 480px),
   ('s', 580px),
   ('md', 960px),
+  ('l', 1023px),
 );
 
 @mixin responsive ($media) {

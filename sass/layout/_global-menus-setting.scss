@@ -6,7 +6,7 @@
       display: flex;
       justify-content: space-evenly;
     }
-           
+                  
     img{
         width: 25%;
         height: 60%;
@@ -19,15 +19,19 @@
       @include responsive (s){
         width: unset;
         margin: unset;
-        font-size: 1.5rem;
+        font-size: 1.5rem;}
+
       @include responsive (md){
         font-size: 1.7rem;
       }
-    }
+      @include responsive (l){
+        margin: 4rem 0;
+      }
+    
       @include surligne;
     }
   
-  }
+}
  
   .FirstCourse div, .MainCourse div, .Dessert div {
     display: block;
@@ -65,4 +69,6 @@
 .Dessert{
   margin-bottom: 4rem;
 }
+
+
 
