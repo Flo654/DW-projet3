@@ -238,7 +238,7 @@ span {
     font-size: 1.7rem;
   }
 }
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .FirstCourse--header h3, .MainCourse--header h3, .Dessert--header h3 {
     margin: 4rem 0;
   }
@@ -308,9 +308,9 @@ header h2 {
   margin: 5px;
   padding: 2px;
 }
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .LaNoteEnchantee {
-    width: 80%;
+    width: 90%;
     margin: 5rem auto;
     box-shadow: 0 0 8px grey;
   }
@@ -368,9 +368,9 @@ header i {
   margin: 5px;
   padding: 2px;
 }
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .LaPaletteDuGout {
-    width: 80%;
+    width: 90%;
     margin: 5rem auto;
     box-shadow: 0 0 8px grey;
   }
@@ -399,9 +399,9 @@ header i {
   margin: 5px;
   padding: 2px;
 }
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .LeChicALaFrancaise {
-    width: 80%;
+    width: 90%;
     margin: 5rem auto;
     box-shadow: 0 0 8px grey;
   }
@@ -442,9 +442,9 @@ header i {
   margin: 5px;
   padding: 2px;
 }
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .LeDeliceDesPapilles {
-    width: 80%;
+    width: 90%;
     margin: 5rem auto;
     box-shadow: 0 0 8px grey;
   }
