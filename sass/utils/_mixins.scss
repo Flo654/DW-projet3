@@ -5,13 +5,13 @@
     text-align: center;    
 }
 
-
+//mixin menus page common properties
 @mixin menu-shapping2($background_color, $padding, $shadow){
     background-color: $background_color;
     padding: $padding ;
     box-shadow: $shadow; 
 }
-// mixin gradients
+// mixin gradients effet
 @mixin gradient ($direction, $list){
     background: linear-gradient(to $direction, $list);
     background: -webkit-linear-gradient(to $direction, $list);
@@ -86,6 +86,8 @@
     }    
 }
 
+//mixin mise en page menus page 
+
 @mixin menu_page_setting ($background, $text_color, $font_family_h2, $font_family_h3, $font_family_p, $list){
   background-color: $background;
   color: $text_color;
@@ -119,6 +121,9 @@
     }     
 }
 
+
+// effet de soulignage des categories de menus
+
 @mixin surligne {
   &::after {
       content: '';
@@ -137,7 +142,7 @@
   }
 }
 
-// breakpoint mixin
+// mixin de la gestion du responsive
 
 $breakpoints: (
   ('xs', 480px),
@@ -151,8 +156,5 @@ $breakpoints: (
     @if $media == nth($breakpoint, 1){
       @media (min-width: #{nth($breakpoint, 2)}) { @content;}
     }
-  }
-  
-
-  
+  }  
 }

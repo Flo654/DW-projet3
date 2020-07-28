@@ -22,7 +22,7 @@
     text-align: center;    
 }
 
-//menus framework
+//boucle mise en forme des menus de l'index
 $menus:
 "la_note_enchantee" $m1_bg  $m1_tc $m1_ffh1 $m1_ffh2 0,
 "le_chic_a_la_francaise" $m2_bg  $m2_tc2 $m2_ffh1 $m2_ffh2 $m2_grad,
@@ -35,17 +35,12 @@ $menus:
         background-color: $background;
         padding: $padding_menus-index_xs;
         box-shadow: $shadow_menus_index;
+
         h3{
             color: $text_color;
             font-family: $font_h2;
         }
-
-         /*@include responsive (s){
-            padding: $padding_menus-index;
-        }*/
-        
-
-               
+                      
         // condition pour menu la note enchanté: l'icone du menu  est en dégradé alors que pour tous les autre menus le titre du menu est en dégradé
         @if  $list == 0  {
             @include responsive (s){
@@ -75,7 +70,6 @@ $menus:
             h2{
                 @include gradient(right, $list);
                 font-family: $font_h1;
-                /*font-size: 5.9vw;*/
                 padding-left: 5px;
             }
         }

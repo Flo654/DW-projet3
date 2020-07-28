@@ -2,10 +2,11 @@
     @include template-color;
     padding: 1.8rem;
     
-    h1{
+    h1, h2{
         font-size: 3rem;
         font-family: 'Roboto', sans-serif;
     }
+    
     a{
         text-decoration: none;
         color: $template_text_color;

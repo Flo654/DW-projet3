@@ -10,15 +10,14 @@ $text_color_note_enchantee: #3C1218;
 $list1: #F0505F, #F78F6A;
 $padding_menus-index:(60% 5%);
 $padding_menus-note_enchantee:(50% 5%);
-
-$padding_menus-index_xs:(20% 5%);
+$padding_menus-index_xs:(50% 5%);
 $shadow_menus_index: (0 0 8px grey);
 $font_family_note_enchantee_h1: "devonshire", cursive;
 $font_family_note_enchantee_h2: "kalam", cursive;
 $list0: #3C1218, #3C1218;
 
 
-//shorcut variables
+//shorcut variables note enchantee
 $m1_bg: $background_note_enchantee;
 $m1_tc: $text_color_note_enchantee;
 $m1_grad: $list1;
@@ -42,7 +41,7 @@ $text_color_chic_francaise_dessert: #6e4ccc;
 $list2: $text_color_chic_francaise_first_course, $text_color_chic_francaise_main_course, $text_color_chic_francaise_dessert;
 
 
-//shorcut variables
+//shorcut variables chic à la francaise
 $m2_bg: $background_chic_francaise;
 $m2_tc: $text_color_chic_francaise;
 $m2_tc2: $text_color_chic_francaise_first_course;
@@ -64,7 +63,7 @@ $font_family_delice_papilles_h1: "dancing script", cursive;
 $font_family_delice_papilles_h2: "kalam", cursive;
 $list3: #072ddd, #1571f3, #249ef9;
 
-//shorcut variables
+//shorcut variables delice des papilles
 $m3_bg: $background_delice_papilles;
 $m3_tc: $text_color_delice_papilles;
 $m3_grad: $list3;
@@ -85,7 +84,7 @@ $font_family_palette_gout_h1: "kaushan script", cursive;
 $font_family_palette_gout_h2: "kalam", cursive;
 $list4: #479a44, #83cd60, #beff7f;
 
-//shorcut variables
+//shorcut variables palette du gout
 $m4_bg: $background_palette_gout;
 $m4_tc: $text_color_palette_gout;
 $m4_grad: $list4;

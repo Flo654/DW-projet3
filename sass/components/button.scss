@@ -6,9 +6,10 @@
    padding: 1.2rem;
    border-radius: 20px;
 
-   p{
+   h4{
        @include responsive (xs){
            font-size: 4vw;
+           font-weight: lighter;
        }
        @include responsive (s) {
            font-size: 2vw;
